@@ -1,0 +1,35 @@
+{
+  "items": [
+    {
+      "kind": "prospect",
+      "platform": "website",
+      "url": "https://example.com/partners",
+      "title": "Example Organization — synthetic demonstration",
+      "text": "Synthetic evidence for demonstrating the review queue. Not a real lead.",
+      "observed_at": "2026-11-20T10:00:00-05:00",
+      "language": "en",
+      "entity_key": "example-organization",
+      "segment": "synthetic partner",
+      "offer_hypothesis": "a small educational event",
+      "fit": 15,
+      "signal": 10,
+      "contactability": 5,
+      "evidence": [
+        {
+          "url": "https://example.com/partners",
+          "claim": "This is synthetic example data, not a verified business claim.",
+          "observed_at": "2026-11-20T10:00:00-05:00"
+        }
+      ]
+    }
+  ],
+  "source_checks": [
+    {
+      "source_id": "example-source",
+      "url": "https://example.com/",
+      "status": "pending",
+      "checked_at": "2026-11-20T10:00:00-05:00",
+      "detail": "Synthetic example only; no remote collection was attempted."
+    }
+  ]
+}

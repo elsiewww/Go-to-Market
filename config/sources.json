@@ -1,0 +1,20 @@
+{
+  "sources": [
+    {
+      "id": "uscis-alerts",
+      "type": "manual",
+      "url": "https://www.uscis.gov/newsroom/alerts",
+      "platform": "website",
+      "enabled": false,
+      "note": "Use the news research agent; RSS feed not configured."
+    },
+    {
+      "id": "visa-bulletin",
+      "type": "manual",
+      "url": "https://travel.state.gov/content/travel/en/legal/visa-law0/visa-bulletin.html",
+      "platform": "website",
+      "enabled": false,
+      "note": "Official source; website adapter not configured."
+    }
+  ]
+}

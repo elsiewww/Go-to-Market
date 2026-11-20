@@ -1,0 +1,96 @@
+{
+  "schema_version": 1,
+  "status": "prepared_not_created",
+  "repository_layout": "shared_repository_logical_separation",
+  "thread_creation": {
+    "available": false,
+    "reason": "No create_thread tool available in this session",
+    "completed": false
+  },
+  "agents": [
+    {
+      "id": "01-source-news",
+      "title": "新闻与知识库",
+      "status": "prepared_not_created",
+      "thread_id": null,
+      "role": "agents/01-source-news/ROLE.md",
+      "start_prompt": "agents/01-source-news/START.md",
+      "knowledge_path": ".local/knowledge/01-source-news",
+      "feedback_path": ".local/knowledge/01-source-news/feedback.jsonl",
+      "output_path": ".local/agents/01-source-news/outbox",
+      "schedule_enabled": false
+    },
+    {
+      "id": "02-wechat-editor",
+      "title": "公众号原创编辑",
+      "status": "prepared_not_created",
+      "thread_id": null,
+      "role": "agents/02-wechat-editor/ROLE.md",
+      "start_prompt": "agents/02-wechat-editor/START.md",
+      "knowledge_path": ".local/knowledge/02-wechat-editor",
+      "feedback_path": ".local/knowledge/02-wechat-editor/feedback.jsonl",
+      "output_path": ".local/agents/02-wechat-editor/outbox",
+      "schedule_enabled": false
+    },
+    {
+      "id": "03-public-prospector",
+      "title": "公开画像与线索研究",
+      "status": "prepared_not_created",
+      "thread_id": null,
+      "role": "agents/03-public-prospector/ROLE.md",
+      "start_prompt": "agents/03-public-prospector/START.md",
+      "knowledge_path": ".local/knowledge/03-public-prospector",
+      "feedback_path": ".local/knowledge/03-public-prospector/feedback.jsonl",
+      "output_path": ".local/agents/03-public-prospector/outbox",
+      "schedule_enabled": false
+    },
+    {
+      "id": "04-outreach-writer",
+      "title": "合作与冷触达文案",
+      "status": "prepared_not_created",
+      "thread_id": null,
+      "role": "agents/04-outreach-writer/ROLE.md",
+      "start_prompt": "agents/04-outreach-writer/START.md",
+      "knowledge_path": ".local/knowledge/04-outreach-writer",
+      "feedback_path": ".local/knowledge/04-outreach-writer/feedback.jsonl",
+      "output_path": ".local/agents/04-outreach-writer/outbox",
+      "schedule_enabled": false
+    },
+    {
+      "id": "05-reply-coach",
+      "title": "回复与异议处理",
+      "status": "prepared_not_created",
+      "thread_id": null,
+      "role": "agents/05-reply-coach/ROLE.md",
+      "start_prompt": "agents/05-reply-coach/START.md",
+      "knowledge_path": ".local/knowledge/05-reply-coach",
+      "feedback_path": ".local/knowledge/05-reply-coach/feedback.jsonl",
+      "output_path": ".local/agents/05-reply-coach/outbox",
+      "schedule_enabled": false
+    },
+    {
+      "id": "06-social-publisher",
+      "title": "全平台内容与发布管理",
+      "status": "prepared_not_created",
+      "thread_id": null,
+      "role": "agents/06-social-publisher/ROLE.md",
+      "start_prompt": "agents/06-social-publisher/START.md",
+      "knowledge_path": ".local/knowledge/06-social-publisher",
+      "feedback_path": ".local/knowledge/06-social-publisher/feedback.jsonl",
+      "output_path": ".local/agents/06-social-publisher/outbox",
+      "schedule_enabled": false
+    },
+    {
+      "id": "07-growth-ops",
+      "title": "GTM、投流与增长运营",
+      "status": "prepared_not_created",
+      "thread_id": null,
+      "role": "agents/07-growth-ops/ROLE.md",
+      "start_prompt": "agents/07-growth-ops/START.md",
+      "knowledge_path": ".local/knowledge/07-growth-ops",
+      "feedback_path": ".local/knowledge/07-growth-ops/feedback.jsonl",
+      "output_path": ".local/agents/07-growth-ops/outbox",
+      "schedule_enabled": false
+    }
+  ]
+}
