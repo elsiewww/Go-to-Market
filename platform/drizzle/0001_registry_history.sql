@@ -1,0 +1,1 @@
+ALTER TABLE `ops_history` ADD `previous_snapshot` text;

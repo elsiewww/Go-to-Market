@@ -12,4 +12,4 @@ Legal claims require current primary sources, jurisdiction, event/publication/ef
 
 Use America/New_York for daily reports. Preserve prior state and user edits. Run relevant unittest checks before committing runtime changes. Do not upload `.local/` or secrets to GitHub Actions artifacts or logs.
 
-Execution ownership: read `docs/delegation.md` and `agents/manifest.json`. L0 owns strategy only. L1/L2 execution requires a verified Claude Opus runtime with an independent session per role; no silent model fallback. Prepared configuration is not a running agent.
+L0 sets strategy and acceptance criteria. L1 and L2 execute through Codex collaboration with the explicit model selector `gpt-6.2-astra`. Record the returned task path, assigned roles, evidence and outcome in the private runtime registry. An independent user-visible chat is optional. See `docs/delegation.md` and `agents/manifest.json`.

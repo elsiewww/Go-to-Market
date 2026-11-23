@@ -26,14 +26,18 @@ PYTHONPATH=src .venv/bin/python -m unittest discover -s tests -v
 
 ## 职责与知识库
 
-采用 L0 战略、3 个 L1 负责人、9 个 L2 专项角色；L1/L2 均要求实际 Opus，当前仅完成交接准备，独立会话尚未创建。见 [层级与交接](docs/delegation.md) 和 [agent operations](docs/agent-operations.md)。独立目录并不等于创建了独立聊天，也不等于完成模型微调。每个角色维护自己批准过的样例、反馈和评估集。
+L0 负责战略和验收，3 个 L1 和 9 个 L2 角色覆盖日常运营。执行使用 `gpt-6.2-astra` 协作子代理。一个任务可承接相关角色，各角色分别维护证据、产出和反馈。实际任务路径和结果保存在私有运行登记表中。[分工与移交](docs/delegation.md) · [运营手册](docs/agent-operations.md)
 
 ## 运行与发布
 
-GitHub Actions 只运行代码检查，不收集真实名单、不读取私人业务资料、不发送消息。日常调度计划迁往实际 Opus L1 会话；当前原主聊天的两条执行任务已暂停，等待运行入口与迁移验收。若该自动化不存在，单独克隆此仓库不会自动启动每日任务。
+GitHub Actions 运行离线检查。晨间任务按内容与合作两条流程归属各自 L1，启用状态、运行时区和最近回执以调度服务记录为准。
 
 LinkedIn 发送队列采用人工操作；海外平台可在配置授权连接后接 Buffer 或官方 API，公众号/小红书等不默认视为已支持。所有发布状态必须由真实平台结果更新。
 
 ## 数据
 
 本仓库可能公开；会议纪要、客户身份、私有知识库、消息内容、业务策略均不进入 git。`.local/` 是本地业务存储，并非加密数据库。团队上线时使用具有访问控制的独立业务存储，代码与数据分别备份。
+
+## Private operations platform
+
+The persistent dashboard source is in [platform](platform/README.md). Role definitions, real Astra execution records, review queues and schedule observations are distinct. Private production data is imported through authenticated Sites tools; the public repository contains code, schemas and generic role instructions only.

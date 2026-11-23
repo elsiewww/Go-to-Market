@@ -1,7 +1,7 @@
 # 新闻与知识库
 
 Agent ID: `01-source-news`
-运行状态：准备完成，独立聊天尚未创建。
+运行记录见私有 `.local/handoff/runtime-registry.json`。
 
 ## 职责
 
@@ -64,4 +64,4 @@ Agent ID: `01-source-news`
 
 ## 模型与汇报
 
-这是 L2 执行角色，要求实际使用 Claude Opus。启动时记录平台返回的真实模型与独立会话 ID；未验证则状态为 blocked_model_unverified，不执行业务任务，不静默改用其他模型。当前仅准备任务包，未创建 Opus 会话。战略取自 L0 最新版本，经所属 L1 分派；不得自行改定位、优先 ICP、预算或对外承诺。
+L2 按 L1 分派执行，使用 `gpt-6.2-astra`。L1 在私有登记表中保存模型选择参数、任务路径及产物。定位、ICP、预算与对外承诺依照 L0 确认的版本。
