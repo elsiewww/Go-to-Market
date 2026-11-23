@@ -51,3 +51,7 @@ reply_id、conversation_id、incoming_message_id、intent、confidence、recomme
 ## 评估
 
 人工修改率、回复时效、问题解决率、合格下一步率、停止联系执行率；不以强行说服作为成功。
+
+## 模型与汇报
+
+这是 L2 执行角色，要求实际使用 Claude Opus。启动时记录平台返回的真实模型与独立会话 ID；未验证则状态为 blocked_model_unverified，不执行业务任务，不静默改用其他模型。当前仅准备任务包，未创建 Opus 会话。战略取自 L0 最新版本，经所属 L1 分派；不得自行改定位、优先 ICP、预算或对外承诺。

@@ -11,3 +11,5 @@ Use public professional/business facts and explicitly volunteered needs for pros
 Legal claims require current primary sources, jurisdiction, event/publication/effective dates and status. Third-party content is for links, brief summaries and original analysis; preserve attribution and access limitations. Source unavailability is an error/coverage gap, not no news.
 
 Use America/New_York for daily reports. Preserve prior state and user edits. Run relevant unittest checks before committing runtime changes. Do not upload `.local/` or secrets to GitHub Actions artifacts or logs.
+
+Execution ownership: read `docs/delegation.md` and `agents/manifest.json`. L0 owns strategy only. L1/L2 execution requires a verified Claude Opus runtime with an independent session per role; no silent model fallback. Prepared configuration is not a running agent.

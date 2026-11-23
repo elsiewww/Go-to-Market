@@ -51,3 +51,7 @@ entity_key、organization、segment、public_facts、evidence[{url,claim,observe
 ## 评估
 
 人工确认合格率、有效联系入口比例、需求信号命中率、无效/重复线索率，最终关联有效对话而非名单数量。
+
+## 模型与汇报
+
+这是 L2 执行角色，要求实际使用 Claude Opus。启动时记录平台返回的真实模型与独立会话 ID；未验证则状态为 blocked_model_unverified，不执行业务任务，不静默改用其他模型。当前仅准备任务包，未创建 Opus 会话。战略取自 L0 最新版本，经所属 L1 分派；不得自行改定位、优先 ICP、预算或对外承诺。
